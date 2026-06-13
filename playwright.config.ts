@@ -11,9 +11,9 @@ export default defineConfig({
   reporter: 'html',
 
   use: {
-    baseURL: 'https://www.saucedemo.com',
-    trace: 'on-first-retry',
-    screenshot: 'only-on-failure',
+    trace: 'on',
+    screenshot: 'on',
+    video: 'on',
   },
 
   projects: [
@@ -29,5 +29,18 @@ export default defineConfig({
       name: 'webkit',
       use: { ...devices['Desktop Safari'] },
     },
+    {
+      name: 'android-mobile',
+      use: { ...devices['Pixel 5'] },
+    },
+    {
+      name: 'ios-mobile',
+      use: { ...devices['iPhone 12'] },
+    },
+    {
+      name: 'ios-tablet',
+      use: { ...devices['iPad Pro 11'] },
+    }
+
   ],
 });
