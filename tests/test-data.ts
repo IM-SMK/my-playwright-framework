@@ -1,7 +1,9 @@
 type TestDataConfig = {
-    url: string;
+    sauseDemoUrl: string;
+    googleRecaptchaUrl: string;
 }
 
 export const testDataConfig: TestDataConfig = {
-    url: 'https://www.saucedemo.com'
+    sauseDemoUrl: 'https://www.saucedemo.com',
+    googleRecaptchaUrl: 'https://www.google.com/recaptcha/api2/demo',
 };

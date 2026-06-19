@@ -5,7 +5,7 @@ import { testDataConfig } from '../test-data';
 test('Valid Login', async ({ page }) => {
     const loginPage = new LoginPage(page);
 
-    await loginPage.navigate(testDataConfig.url);
+    await loginPage.navigate(testDataConfig.sauseDemoUrl);
 
     await loginPage.login(
         'standard_user',
