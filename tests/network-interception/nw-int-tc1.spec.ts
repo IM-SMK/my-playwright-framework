@@ -6,6 +6,5 @@ test('block recaptcha', async ({ page }) => {
         console.log("blocked:", route.request().url());
         await route.abort();
     });
-    await page.pause();
     await page.goto(testDataConfig.googleRecaptchaUrl);
 })
